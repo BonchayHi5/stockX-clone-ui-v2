@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:stockx_clone_ui_v2/screens/home_screen/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "StockX: Sneakers, Streetwear",
       theme: ThemeData(primarySwatch: Colors.blue),
@@ -25,18 +26,11 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(
-      color: Colors.blue,
-      strokeWidth: 2,
-      child: Center(
-        child: Text(
-          'StockX Clone UI v2',
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
+     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "StockX: Sneakers, Streetwear",
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const HomeScreen(),
     );
   }
 }

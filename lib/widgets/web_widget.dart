@@ -15,7 +15,8 @@ class WebWidget extends StatelessWidget {
         child: Column(
           children: [
             widget,
-            const Footer(),
+            Container() 
+           // const Footer(),
           ],
         ),
       ),
